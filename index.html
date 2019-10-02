@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Be+Vietnam|Big+Shoulders+Text:400,900&display=swap');
+
+            body {
+                margin: 0px;
+                
+            }
+            .father {
+                position: relative;
+                background: #262626;
+                width:100%;
+                height:850px;
+                display: flex;
+                justify-content: center;
+
+            }
+            .header {
+                position: absolute;
+                width: 100%;
+                text-align: center;
+                font-size: 100px;
+                padding: 20px;
+                color: #dfdfc7;
+                font-family: 'Big Shoulders Text';
+                cursor:pointer;
+            }
+            .header:hover {
+                color: #b12929;
+            }
+            .cars {
+                border-radius: 20px;
+                position: absolute;
+                margin-top: 160px;
+                color: #dfdfc7;
+                background: #614c4c;
+                font-family: 'Be Vietnam', sans-serif;
+                font-size: 22px;
+                width: 700px;
+                display:block;
+                cursor:pointer;
+                
+
+            }
+            li {
+                display: inline-block;
+                list-style-type: none;
+                padding: 5px 10px;
+                border-radius: 8px;
+                /* background:coral; */
+            }
+            li:hover {
+                background: #777474;
+            }
+            li ul {
+                display: none;
+            }
+            li:hover ul {
+                display:flex;
+                flex-direction: column;
+                position: absolute;
+                padding: 25px 0px;
+                
+            }
+           
+            li ul li:nth-child(2n) {
+                color:crimson;
+            }
+
+            [title]:first-of-type, [title]:last-of-type {
+                background: crimson;
+                
+                color: #262626;
+                font-weight: 900;
+            }
+            [title]::before {
+                content: "→";
+                
+            }
+
+            [title]::after {
+                content: "←";
+            }
+        
+        </style>
+</head>
+<body>
+    <div class="father">
+        <div class="header">
+            CARS OF THE WORLD
+        </div>
+        
+        <div class="cars">
+            <ul>
+                <li>
+                    Germany
+                        <ul>
+                            <li title="the best">BMW</li>
+                            <li>Audi</li>
+                            <li>Mercedes</li>
+                            <li>VW</li>
+                        </ul>
+                </li>
+                <li>
+                    Japan
+                        <ul>
+                            <li>Nissan</li>
+                            <li title="comfort">Toyota</li>
+                            <li title="monobrow">Mazda</li>
+                            <li>Mitsubisi</li>
+                        </ul>
+                </li>
+                <li>
+                    Italy
+                        <ul>
+                            <li>Fiat</li>
+                            <li>Alfa Romeo</li>
+                            <li>Maseratti</li>
+                            <li title="speedy">Lamborgini</li>
+                        </ul>
+                </li>
+                <li>
+                        USA
+                            <ul>
+                                <li title="the oldest one">Ford</li>
+                                <li>Chevrolet</li>
+                                <li>Pontiak</li>
+                                <li title="big boss">Cadillac</li>
+                            </ul>
+                    </li>
+                <li>Russia</li>
+                <li>China</li>
+                <li>
+                    Norway
+                        <ul>
+                            <li>Volvo</li>
+                        </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
